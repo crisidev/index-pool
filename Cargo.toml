@@ -1,0 +1,20 @@
+[package]
+name = "index-pool"
+version = "0.1.0"
+authors = ["Matteo Bigoi <bigo@crisidev.org>"]
+description = "Utility to copy files over WiFi to/from mobile devices inside a terminal."
+documentation = "https://docs.rs/index-pool"
+readme = "README.md"
+homepage = "https://github.com/crisidev/index-pool"
+repository = "https://github.com/crisidev/index-pool"
+license = "MIT"
+keywords = ["library", "concurrency", "pool", "cache"]
+categories = ["concurrency", "caching", "memory-management"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+parking_lot = { version = "0.11", features = ["deadlock_detection"] }
+
+[dev-dependencies]
+pretty_assertions = "0.6"
