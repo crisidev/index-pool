@@ -41,9 +41,9 @@
 //! }
 //!
 //! let pool: Pool<Obj> = Pool::default();
-//! let obj = pool.pull("item1", || Obj{size: 1}); 
+//! let obj = pool.pull("item1", || Obj{size: 1});
 //! assert_eq!(obj.size, 1);
-//! let obj2 = pool.pull("item1", || Obj{size: 1}); 
+//! let obj2 = pool.pull("item1", || Obj{size: 1});
 //! assert_eq!(obj.size, 1);
 //! ```
 //! Pull from pool and `detach()`
@@ -55,9 +55,9 @@
 //! }
 //!
 //! let pool: Pool<Obj> = Pool::default();
-//! let obj = pool.pull("item1", || Obj{size: 1}); 
+//! let obj = pool.pull("item1", || Obj{size: 1});
 //! assert_eq!(obj.size, 1);
-//! let obj2 = pool.pull("item1", || Obj{size: 1}); 
+//! let obj2 = pool.pull("item1", || Obj{size: 1});
 //! assert_eq!(obj.size, 1);
 //! let (pool, obj) = obj.detach();
 //! assert_eq!(obj.size, 1);
