@@ -1,8 +1,8 @@
 [package]
 name = "indexed-pool"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Matteo Bigoi <bigo@crisidev.org>"]
-description = "Utility to copy files over WiFi to/from mobile devices inside a terminal."
+description = "Indexed object pool for expensive / frequent allocations"
 documentation = "https://docs.rs/indexed-pool"
 readme = "README.md"
 homepage = "https://github.com/crisidev/indexed-pool"

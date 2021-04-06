@@ -18,14 +18,14 @@
 //! The default pool creation looks like this, with 32 indexes with a capacity of 8 elements
 //! expiring after 5 minutes from creation :
 //! ```no_run
-//! use index_pool::Pool;
+//! use indexed_pool::Pool;
 //!
 //! let pool: Pool<String> = Pool::default();
 //! ```
 //! Example pool with 64 `Vec<u8>` with capacity of 64 elements each expiring after 10 seconds:
 //! ```
 //! use std::time::Duration;
-//! use index_pool::Pool;
+//! use indexed_pool::Pool;
 //!
 //! let pool: Pool<u8> = Pool::new(64, 64, Duration::from_secs(10));
 //! ```
@@ -34,7 +34,7 @@
 //!
 //! Basic usage for pulling from the pool
 //! ```
-//! use index_pool::Pool;
+//! use indexed_pool::Pool;
 //!
 //! struct Obj {
 //!     size: usize,
@@ -48,7 +48,7 @@
 //! ```
 //! Pull from pool and `detach()`
 //! ```
-//! use index_pool::Pool;
+//! use indexed_pool::Pool;
 //!
 //! struct Obj {
 //!     size: usize,
@@ -69,7 +69,7 @@
 //! You simply wrap the pool in a [`std::sync::Arc`]
 //! ```no_run
 //! use std::sync::Arc;
-//! use index_pool::Pool;
+//! use indexed_pool::Pool;
 //!
 //! let pool: Arc<Pool<String>> = Arc::new(Pool::default());
 //! ```
