@@ -1,12 +1,12 @@
 [package]
-name = "index-pool"
+name = "indexed-pool"
 version = "0.1.0"
 authors = ["Matteo Bigoi <bigo@crisidev.org>"]
 description = "Utility to copy files over WiFi to/from mobile devices inside a terminal."
-documentation = "https://docs.rs/index-pool"
+documentation = "https://docs.rs/indexed-pool"
 readme = "README.md"
-homepage = "https://github.com/crisidev/index-pool"
-repository = "https://github.com/crisidev/index-pool"
+homepage = "https://github.com/crisidev/indexed-pool"
+repository = "https://github.com/crisidev/indexed-pool"
 license = "MIT"
 keywords = ["library", "concurrency", "pool", "cache"]
 categories = ["concurrency", "caching", "memory-management"]
